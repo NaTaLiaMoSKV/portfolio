@@ -1,2 +1,8 @@
-@import './common';
-@import './example';
+@import './base/base';
+@import './utils/variables';
+@import './components/section';
+@import './components/bg-images';
+@import './layout/header2';
+@import './layout/education';
+@import './layout/projects';
+// @import './layout/lms';

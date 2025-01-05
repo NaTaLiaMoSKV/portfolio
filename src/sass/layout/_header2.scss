@@ -1,0 +1,126 @@
+header {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: stretch;
+  gap: 20px;
+}
+
+.header-images__container {
+  position: relative;
+  width: 100%;
+  background: #eeeeee;
+  height: 450px;
+}
+
+.header-images__img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60%;
+  transform: translateY(-50%);
+  height: 80%;
+}
+
+.header-user__img {
+  position: absolute;
+  height: 60%;
+  max-width: 40%;
+  padding: 20px 15px 0;
+  top: 50%;
+  left: 10%;
+  object-fit: contain;
+  object-position: bottom;
+  transform: translateY(-50%);
+  background-color: var(--dark-color);
+  z-index: 3;
+}
+
+.header-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-description__title {
+  font-size: 60px;
+  letter-spacing: 0.05em;
+}
+
+.header-description__subtitle {
+  margin-top: 30px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.header-description__text {
+  border: 2px solid var(--dark-color);
+  padding: 3px 10px;
+  margin-bottom: 20px;
+}
+
+.networks__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.networks__img,
+.networks__icon {
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  box-shadow: none;
+  transition: all 350ms ease-in-out;
+}
+
+.networks__img:hover,
+.networks__icon:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .header-images__img {
+    right: 20px;
+  }
+
+  .header-description__title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 550px;
+    justify-content: center;
+  }
+
+  .header-images__container {
+    height: 550px;
+  }
+
+  .header-description__title {
+    margin-top: 30px;
+    font-size: 90px;
+  }
+
+  .header-description__subtitle {
+    position: absolute;
+    top: 25px;
+  }
+
+  .header-images__img {
+    max-width: 50%;
+    right: 50px;
+  }
+}

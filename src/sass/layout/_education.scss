@@ -1,0 +1,68 @@
+.education__container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-image: url('../images/bg/ed-2.jpg');
+  color: var(--dark-color);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  position: relative;
+  height: 650px;
+  background-color: #fff;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.education__list {
+  max-width: 600px;
+}
+
+.education__item {
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  display: flex;
+  gap: 20px;
+  letter-spacing: 0.04em;
+  align-items: center;
+}
+
+.education__logo {
+  width: 60px;
+}
+.education__text {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .education__container {
+    height: 530px;
+    &::before {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .education__container {
+    height: 500px;
+    background-image: url('../images/bg/ed-2-speech.jpg');
+    background-size: 50%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .education__list {
+    max-width: 800px;
+  }
+}
