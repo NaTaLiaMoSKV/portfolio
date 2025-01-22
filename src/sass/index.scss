@@ -1,8 +1,10 @@
 @import './base/base';
 @import './utils/variables';
 @import './components/section';
-@import './components/bg-images';
-@import './layout/header2';
+@import './components/networks';
+@import './layout/header';
+@import './layout/stack';
 @import './layout/education';
 @import './layout/projects';
-// @import './layout/lms';
+@import './layout/lms';
+@import './layout/footer';
